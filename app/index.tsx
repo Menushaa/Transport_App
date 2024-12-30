@@ -8,7 +8,7 @@ const index = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Welcome to TransGo</Text>
-      <Image source={require('../assets/images/logo.jpeg')} style={styles.logo} />
+      <Image source={require('../assets/images/logo.png')} style={styles.logo} />
       <Text style={styles.description}>Simplify Your Journey with TransGo</Text>
       <Text style={styles.description2}>"Seamless, reliable, and hassle-free travel—your next ride is a tap away!"</Text>
       <Button mode="contained" style={styles.button} onPress={() => router.push('/(auth)/login')}>

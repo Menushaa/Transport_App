@@ -19,13 +19,13 @@ export default function Login() {
         pathname: '/home',
         params: { username: data.email.split('@')[0] },
       });
-    }, 3000); // Display modal for 2 seconds before redirecting
+    }, 1000); // Display modal for 2 seconds before redirecting
   };
 
   return (
     <View style={styles.container}>
       <Text variant="headlineMedium" style={styles.title}>SignIn to TransGo</Text>
-      <Image source={require('../../assets/images/logo.jpeg')} style={styles.logo} />
+      <Image source={require('../../assets/images/logo.png')} style={styles.logo} />
       <AuthForm type="login" onSubmit={handleLogin} />
       <Link href="/register" style={styles.link}>
         Don't have an account? Register

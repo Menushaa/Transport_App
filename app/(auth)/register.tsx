@@ -18,7 +18,7 @@ export default function Register() {
     return (
         <View style={styles.container}>
             <Text variant="headlineMedium" style={styles.title}>SignUp to TransGo</Text>
-            <Image source={require('../../assets/images/logo.jpeg')} style={styles.logo} />
+            <Image source={require('../../assets/images/logo.png')} style={styles.logo} />
 
             <AuthForm type="register" onSubmit={handleRegister} />
             <Link href="/login" style={styles.link}>
